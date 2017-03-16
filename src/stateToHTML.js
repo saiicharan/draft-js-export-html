@@ -412,7 +412,6 @@ function encodeContent(text: string): string {
 
 function encodeAttr(text: string): string {
   return text
-    .split('&').join('&amp;')
     .split('<').join('&lt;')
     .split('>').join('&gt;')
     .split('"').join('&quot;');
